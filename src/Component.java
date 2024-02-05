@@ -17,6 +17,11 @@ public class Component {
         this.Name = Name;
     }
 
+    public String getName()
+    {
+        return Name;
+    }
+
     private void setPrice(double Price)
     {
         if (Price < 0 || Price > 10000)
@@ -25,12 +30,22 @@ public class Component {
         this.Price = Price;
     }
 
+    public double getPrice()
+    {
+        return Price;
+    }
+
     private void setManufacturer(String Manufacturer)
     {
         if (!Valid.contains(Manufacturer))
             throw new IllegalArgumentException(Manufacturer + " is not in the valid list.");
 
         this.Manufacturer = Manufacturer;
+    }
+
+    public String getManufacturer()
+    {
+        return Manufacturer;
     }
 
     @Override
