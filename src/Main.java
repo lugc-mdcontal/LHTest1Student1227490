@@ -24,7 +24,6 @@ public class Main {
         Component component10 = new Component("RAM","XTREEM",210.42);
         Component component11 = new Component("sound card","Asus",323.00);
 
-        /*
         ShoppingCart shoppingCart = new ShoppingCart();
         shoppingCart.addItem(component1);
         shoppingCart.addItem(component2);
@@ -46,6 +45,5 @@ public class Main {
         ShoppingCart emptyCart = new ShoppingCart();
         System.out.println("\n\nEmpty Shopping Cart Table");
         System.out.printf("%n%s%n",emptyCart.getTableSummary());
-        */
     }
 }
