@@ -33,8 +33,17 @@ public class Component {
         this.Manufacturer = Manufacturer;
     }
 
+    @Override
+    public String toString()
+    {
+        // Serialize the string
+        return Name + "-" + Manufacturer + ", price: $" + String.format("%.2f", Price);
+    }
+
     public Component(String Name, String Manufacturer, double Price)
     {
-
+        setName(Name);
+        setManufacturer(Manufacturer);
+        setPrice(Price);
     }
 }
